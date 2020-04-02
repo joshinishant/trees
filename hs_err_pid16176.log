@@ -1,0 +1,40 @@
+#
+# A fatal error has been detected by the SAP Java Virtual Machine:
+#
+#  Internal Error (d:/depot/bas/sapjvm/81_REL/src/9/../hotspotX/src/share/vm/prims/jni.cpp:740), pid=16176, tid=1196
+#  fatal error: FATAL ERROR in native method: JDWP cannot get thread local storage, jvmtiError=JVMTI_ERROR_WRONG_PHASE(112)
+#
+# JRE version:  (8.0.192) (build )
+# Java VM: SAP Java Server VM (8.1.047 9.0.4+011, Dec  6 2018 11:11:45 - 81_REL - optU - windows amd64 - 6 - bas2:311015 (mixed mode), tiered, compressed oops, parallel gc, windows-amd64)
+# CreateCoredumpOnCrash turned off, no core file dumped
+#
+# If you would like to submit a bug report, please visit:
+#   https://support.sap.com/incident
+# Please save the hs_err file(s) and the written dmp file for further error analysis
+# See SAP note 1500116 for further information on collecting core dumps after SAPJVM crashes
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:55001,suspend=y,server=n -javaagent:C:\Users\I354348\.IdeaIC2018.3\system\captureAgent\debugger-agent.jar -Dfile.encoding=UTF-8 com.trees.heap.RunHeap
+
+Host: INLN34409586A, Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, 8 cores, 31G,  Windows 10 , 64 bit Build 17763 (10.0.17763.475)
+Time: Thu Apr 02 17:27:29 2020 India Standard Time elapsed: 8 minutes, 11 seconds
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002407a4be800):  JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_in_vm (_call_back), id=1196 [stack: 0x00000057e9d00000,0x00000057e9e00000 (1024k)], stack: guarded]
+
+Stack: [0x00000057e9d00000 <- 0x00000057e9e00000] sp is NULL Guard pages: used, yellow zone enabled.
+red zone:     [0x00000057e9d00000,0x00000057e9d01000]
+yellow zone:  [0x00000057e9d01000,0x00000057e9d04000]
+usable stack: [0x00000057e9d01000,0x00000057e9e00000]
+virt.mem. map [0x00000057e9d00000,0x00000057e9e00000] (1024 KB, 1048576 Byte)
+  [0x00000057e9d00000,0x00000057e9d04000] (   16 KB) 0x00000104 PAGE_READWRITE|PAGE_GUARD
+  [0x00000057e9d04000,0x00000057e9df4000] (  960 KB) Reserved
+  [0x00000057e9df4000,0x00000057e9df7000] (   12 KB) 0x00000104 PAGE_READWRITE|PAGE_GUARD
+  [0x00000057e9df7000,0x00000057e9e00000] (   36 KB) 0x00000004 PAGE_READWRITE
+
+Stack:
+
+    SP                 PC                 RetPC              Symbol
