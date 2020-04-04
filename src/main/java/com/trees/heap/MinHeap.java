@@ -1,11 +1,10 @@
 package com.trees.heap;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.logging.Logger;
 
 public class MinHeap {
 
-    private static final Logger log= LoggerFactory.getLogger(MinHeap.class);
+    private static final Logger log= Logger.getLogger("MinHeap");
 
     private int heap_array[];
     private int capcity;

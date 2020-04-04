@@ -1,11 +1,10 @@
 package com.trees.heap;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.logging.Logger;
 
 public class RunHeap {
 
-    private static final Logger log= LoggerFactory.getLogger(RunHeap.class);
+    private static final Logger log= Logger.getLogger("RunHeap");
 
 
     public static void main(String[] args){
