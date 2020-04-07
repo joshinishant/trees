@@ -1,7 +1,5 @@
 package com.trees.binarytree;
 
-import java.util.Objects;
-
 public class Node {
 
     private Object key;
