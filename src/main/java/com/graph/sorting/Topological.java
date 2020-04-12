@@ -9,11 +9,10 @@ import java.util.logging.Logger;
 
 public class Topological {
 
-    private static final Logger log= Logger.getLogger("Topological");
+    private static Logger log= Logger.getLogger("Topological");
 
     public static void sort(Graph graph){
         Stack<Integer> stack=new Stack<Integer>();
-        LinkedList<Integer> vertices[]=graph.getAllVertices();
         boolean addedToStack[]= new boolean[graph.getTotalVertices()];
         for(int counter=0;counter<graph.getTotalVertices();counter++){
             sort(counter,graph,stack,addedToStack);

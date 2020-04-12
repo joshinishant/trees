@@ -30,9 +30,6 @@ public class Graph {
         return new LinkedList<Integer>(this.vertices[startingVertex]);
     }
 
-    public LinkedList<Integer>[] getAllVertices(){
-        return vertices;
-    }
 
 
     public void addEdge(int fromVertex,int toVertex){
