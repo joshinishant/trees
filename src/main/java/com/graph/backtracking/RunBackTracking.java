@@ -4,7 +4,7 @@ public class RunBackTracking {
 
     public static void main(String args[]){
         Knight knight= new Knight(8);
-        //knight.solve();
+        knight.solve();
 
         int maze[][] =
         {   { 1, 0, 0, 0 },
