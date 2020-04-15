@@ -16,6 +16,10 @@ public class RunBackTracking {
         MouseInMaze mouseInMaze= new MouseInMaze();
         mouseInMaze.solve(maze);
 
+
+        NQueenProblem NQueenProblem =new NQueenProblem(4);
+        NQueenProblem.fitQueensInBoard(4);
+
     }
 
 }
