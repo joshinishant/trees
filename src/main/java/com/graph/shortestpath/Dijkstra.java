@@ -29,8 +29,10 @@ public class Dijkstra {
 
     private void print(int distance[]){
         System.out.println("Vertex \t\t Distance from Source");
-        for (int counter = 0; counter < totalVertices; counter++)
-            System.out.println(counter + " \t\t " + distance[counter]);
+        for (int counter = 0; counter < totalVertices; counter++) {
+            System.out.println(counter + " \t\t\t " + distance[counter]);
+        }
+        System.out.println("\n\n");
     }
 
 
